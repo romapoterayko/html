@@ -11,15 +11,39 @@
         <h1>Social polling</h1>
             <nav>
                 <a href="index.html">Home</a>
-            </nav>
+            </nav><br>
     </header>
     <main>
-        <form action="https://formspree.io/poterayko.rv@email.com" method="POST">
+        <form action="https://formspree.io/poterayko.rv@gmail.com" method="POST">
           <label>
-              
-          </label>
-          <input type="text" name="name">
-          <input type="email" name="_replyto">
+              <span>Name:</span>
+              <input type="text" name="name" placeholder="Your name" required>
+          </label><br>
+          <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="Email" required>
+          </label><br><br>
+          <span>Who of the players is worthy of the Golden Ball?</span>
+          <br>
+          <label>
+              <input type="radio" name="goldenball" value="Messi">Messi
+          </label><br>
+          <label>
+              <input type="radio" name="goldenball" value="Suarez">Suarez
+          </label><br>
+          <label>
+              <input type="radio" name="goldenball" value="Neymar">Neymar
+          </label><br>
+          <label>
+              <input type="radio" name="goldenball" value="Mbappe">Mbappe
+          </label><br>
+          <label>
+              <input type="radio" name="goldenball" value="Kane">Kane
+          </label><br>
+          <label>
+              <span>Write a message</span>
+              <textarea rows="4" cols="50" name="your-text" placeholder="Write a message"></textarea>
+          </label><br>
           <input type="submit" value="Send">
         </form>
     </main>
